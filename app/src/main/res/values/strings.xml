@@ -1,249 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">FileFlow</string>
     <string name="app_name_launcher" translatable="false">FileFlow</string>
 
-    <!-- region AboutScreen -->
-    <string name="about">About</string>
-    <string name="app_logo">App logo</string>
-    <string name="app_description">" scans your files periodically and organizes them according to your rules."</string>
-    <string name="app_links"><![CDATA[Licensed under <a href=\"https://github.com/BURG3R5/FileFlow/blob/master/LICENSE\">GPLv3</a><br/>Source code available on <a href=\"https://github.com/BURG3R5/FileFlow\">GitHub</a><br/>Visit the <a href=\"https://github.com/BURG3R5/FileFlow/wiki\">project wiki</a> for more]]></string>
-    <string name="app_permissions_without_network"><![CDATA[Permissions<small><ul><li>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: to request exemption from background usage restrictions</li><li>WRITE/MANAGE_EXTERNAL_STORAGE: for targeting protected folders</li></ul>Other permissions may be used by libraries to manage tasks, such as executing flows periodically.</small>]]></string>
-    <string name="app_permissions_with_network"><![CDATA[Permissions<small><ul><li>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: to request exemption from background usage restrictions</li><li>WRITE/MANAGE_EXTERNAL_STORAGE: for targeting protected folders</li><li>INTERNET: to connect to SFTP servers, for remote actions</li></ul>Other permissions may be used by libraries to manage tasks, such as executing flows periodically.</small>]]></string>
-    <string name="dev_credit"><![CDATA[Developed by <a href=\"https://github.com/BURG3R5/\">BURG3R5</a>]]></string>
-    <!-- region AppBar -->
-    <string name="back_button">Back button</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：关于界面 -->
+    <string name="about">关于</string>
+    <string name="app_logo">应用图标</string>
+    <string name="app_description">会定期扫描您的文件，并按规则自动整理。</string>
+    <string name="app_links"><![CDATA[采用 <a href=\"https://github.com/BURG3R5/FileFlow/blob/master/LICENSE\">GPLv3</a> 许可<br/>源代码托管在 <a href=\"https://github.com/BURG3R5/FileFlow\">GitHub</a><br/>访问 <a href=\"https://github.com/BURG3R5/FileFlow/wiki\">项目 Wiki</a> 了解更多]]></string>
+    <string name="app_permissions_without_network"><![CDATA[权限说明<small><ul><li>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS：申请豁免后台使用限制</li><li>WRITE/MANAGE_EXTERNAL_STORAGE：用于访问受保护的文件夹</li></ul>部分三方库可能额外申请权限以管理任务（如定期执行规则）。</small>]]></string>
+    <string name="app_permissions_with_network"><![CDATA[权限说明<small><ul><li>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS：申请豁免后台使用限制</li><li>WRITE/MANAGE_EXTERNAL_STORAGE：用于访问受保护的文件夹</li><li>INTERNET：用于连接 SFTP 服务器执行远程操作</li></ul>部分三方库可能额外申请权限以管理任务（如定期执行规则）。</small>]]></string>
+    <string name="dev_credit"><![CDATA[开发者 <a href=\"https://github.com/BURG3R5/\">BURG3R5</a>]]></string>
+    <!-- 区域：顶部导航栏 -->
+    <string name="back_button">返回按钮</string>
+    <!-- 结束区域：顶部导航栏 -->
+    <!-- 结束区域：关于界面 -->
 
-    <!-- region CreateServerScreen -->
-    <string name="host">Host</string>
-    <string name="port">Port</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="private_key">Private key</string>
-    <!-- region CreateServerViewModel.Error -->
-    <string name="cannot_connect">"Couldn't connect to the server"</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：添加服务器界面 -->
+    <string name="host">主机地址</string>
+    <string name="port">端口</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="private_key">私钥</string>
+    <!-- 区域：CreateServerViewModel.Error -->
+    <string name="cannot_connect">无法连接到服务器</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：添加服务器界面 -->
 
-    <!-- region ExecutionsScreen -->
-    <string name="history">History</string>
-    <string name="no_executions">No executions yet.</string>
-    <string name="ago">%1$s ago</string>
-    <!-- region Action -->
-    <string name="emit">EMIT</string>
-    <!-- endregion -->
-    <!-- region String -->
-    <string name="many_days">"1k+ days"</string>
-    <string name="just_now">just now</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：执行记录界面 -->
+    <string name="history">历史记录</string>
+    <string name="no_executions">暂无执行记录。</string>
+    <string name="ago">%1$s 前</string>
+    <!-- 区域：操作类型 -->
+    <string name="emit">发送</string>
+    <!-- 结束区域 -->
+    <!-- 区域：时间描述 -->
+    <string name="many_days">1000+ 天</string>
+    <string name="just_now">刚刚</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：执行记录界面 -->
 
-    <!-- region GroupsScreen -->
-    <string name="groups">Groups</string>
-    <string name="no_groups">"Groups are collections of rules executable via 'shortcuts'.\n\nTap and hold FileFlow's app icon on your device's Apps Screen to access the shortcuts.\n\nNo groups currently added.\nTap + to get started."</string>
-    <string name="shortcuts_limited">Only the first %1$d app shortcuts are visible in the launcher. Please delete existing groups first.</string>
-    <string name="add_group">Add group</string>
-    <string name="edit_group">Edit group</string>
-    <!-- region DeleteGroupDialog -->
-    <string name="delete_group">Delete group</string>
-    <string name="delete_group_confirmation">Deletion is permanent; your group will be lost. Included rules will not be affected.</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：规则组界面 -->
+    <string name="groups">规则组</string>
+    <string name="no_groups">规则组是可通过“快捷方式”执行的规则集合。\n\n长按设备应用列表中的 FileFlow 图标即可访问快捷方式。\n\n当前未添加任何规则组。\n点击 + 开始添加。</string>
+    <string name="shortcuts_limited">启动器中最多只显示前 %1$d 个快捷方式。请先删除已有的规则组。</string>
+    <string name="add_group">添加规则组</string>
+    <string name="edit_group">编辑规则组</string>
+    <!-- 区域：删除规则组对话框 -->
+    <string name="delete_group">删除规则组</string>
+    <string name="delete_group_confirmation">删除后无法恢复，规则组将永久丢失。其中的规则不受影响。</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：规则组界面 -->
 
-    <!-- region LicensesScreen -->
-    <string name="licenses">Licenses</string>
-    <!-- endregion -->
+    <!-- 区域：许可证界面 -->
+    <string name="licenses">许可证</string>
+    <!-- 结束区域：许可证界面 -->
 
-    <!-- region OnboardingScreen -->
-    <string name="onboarding_info_1">"FileFlow scans your files periodically and organizes them according to your rules.\n\nOn some devices, the 'battery optimization' feature leads to delayed execution."</string>
-    <string name="disable_optimization">Disable optimization</string>
-    <string name="skip">Skip</string>
-    <string name="onboarding_info_2_without_network">"To use advanced features such as targeting protected folders, FileFlow will need all files access.\n\nNo data is sent off-device; FileFlow doesn't have access to the internet."</string>
-    <string name="onboarding_info_2_with_network">To use advanced features such as targeting protected folders, FileFlow will need all files access.</string>
-    <string name="grant_permission">Grant permission</string>
-    <!-- endregion -->
+    <!-- 区域：引导界面 -->
+    <string name="onboarding_info_1">FileFlow 会定期扫描您的文件，并按规则自动整理。\n\n部分设备开启“电池优化”后可能导致规则执行延迟。</string>
+    <string name="disable_optimization">关闭优化</string>
+    <string name="skip">跳过</string>
+    <string name="onboarding_info_2_without_network">要使用访问受保护文件夹等高级功能，FileFlow 需要“所有文件访问”权限。\n\n所有数据仅保存在本地，FileFlow 没有网络访问权限。</string>
+    <string name="onboarding_info_2_with_network">要使用访问受保护文件夹等高级功能，FileFlow 需要“所有文件访问”权限。</string>
+    <string name="grant_permission">授予权限</string>
+    <!-- 结束区域：引导界面 -->
 
-    <!-- region RulesScreen -->
-    <string name="add_rule">Add rule</string>
-    <string name="no_rules">No rules added.\nTap + to get started.</string>
-    <string name="disabled">disabled</string>
-    <string name="execute_rule">Execute rule</string>
-    <string name="toggle_rule">%1$s rule</string>
-    <string name="edit_rule">Edit rule</string>
-    <string name="delete_rule">Delete rule</string>
-    <!-- region ManageRuleDialog -->
-    <string name="execute_confirmation">Execute this rule?</string>
-    <string name="toggle_rule_confirmation">%1$s this rule?</string>
-    <string name="delete_confirmation">Deletion is permanent; your rule and its stats will be lost.%1$s</string>
-    <string name="disable_suggestion">" Consider disabling instead."</string>
-    <string name="execute">Execute</string>
-    <string name="enable">Enable</string>
-    <string name="disable">Disable</string>
-    <string name="delete">Delete</string>
-    <!-- endregion -->
-    <!-- region ImproperRulesetDialog -->
-    <string name="improper_ruleset">Incompatible rules</string>
-    <string name="explain_improper_rules">The following rules cannot be executed with the current permissions. Please tap on each tile and reselect folders.</string>
-    <string name="dismiss">Dismiss</string>
-    <!-- endregion -->
-    <!-- region Action -->
-    <string name="copy">COPY</string>
-    <string name="move">MOVE</string>
-    <string name="delete_stale">DELETE</string>
-    <string name="zip">ZIP</string>
-    <string name="watch">WATCH</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：规则主界面 -->
+    <string name="add_rule">添加规则</string>
+    <string name="no_rules">暂无规则。\n点击 + 开始添加。</string>
+    <string name="disabled">已禁用</string>
+    <string name="execute_rule">执行规则</string>
+    <string name="toggle_rule">%1$s 此规则</string>
+    <string name="edit_rule">编辑规则</string>
+    <string name="delete_rule">删除规则</string>
+    <!-- 区域：管理规则对话框 -->
+    <string name="execute_confirmation">确定要执行此规则吗？</string>
+    <string name="toggle_rule_confirmation">确定要 %1$s 此规则吗？</string>
+    <string name="delete_confirmation">删除后无法恢复，规则及统计数据将永久丢失。%1$s</string>
+    <string name="disable_suggestion">建议改为禁用。</string>
+    <string name="execute">执行</string>
+    <string name="enable">启用</string>
+    <string name="disable">禁用</string>
+    <string name="delete">删除</string>
+    <!-- 结束区域 -->
+    <!-- 区域：不兼容规则对话框 -->
+    <string name="improper_ruleset">不兼容的规则</string>
+    <string name="explain_improper_rules">以下规则因缺少权限而无法执行。请点击每个卡片重新选择文件夹。</string>
+    <string name="dismiss">忽略</string>
+    <!-- 结束区域 -->
+    <!-- 区域：操作类型 -->
+    <string name="copy">复制</string>
+    <string name="move">移动</string>
+    <string name="delete_stale">删除</string>
+    <string name="zip">压缩</string>
+    <string name="watch">监控</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：规则主界面 -->
 
-    <!-- region ServersScreen -->
-    <string name="no_servers">"No servers currently added.\nTap + to get started."</string>
-    <string name="add_server">Add server</string>
-    <!-- region DeleteServerDialog -->
-    <string name="delete_server">Delete server</string>
-    <string name="delete_server_confirmation">Deletion is permanent; your data and credentials will be lost. However, rules that currently use this server will continue to use these credentials.</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <!-- 区域：服务器管理界面 -->
+    <string name="no_servers">暂未添加服务器。\n点击 + 开始添加。</string>
+    <string name="add_server">添加服务器</string>
+    <!-- 区域：删除服务器对话框 -->
+    <string name="delete_server">删除服务器</string>
+    <string name="delete_server_confirmation">删除后无法恢复，数据及凭据将永久丢失。但正在使用此服务器的规则将继续使用已保存的凭据。</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：服务器管理界面 -->
 
-    <!-- region SettingsScreen -->
-    <string name="settings">Settings</string>
-    <string name="settings_section_1">Optional Enhancements</string>
-    <string name="disable_battery_optimization">Disable optimization</string>
-    <string name="explain_disabling_battery_optimization">Exempts the app from being restricted by the OS</string>
-    <string name="all_files_access">All files access</string>
-    <string name="explain_all_files_access">Lets flows target protected folders</string>
-    <string name="enable_rule_names">Enable rule names</string>
-    <string name="explain_enable_rule_names">Adds a \"name\" field to rules</string>
-    <string name="display_full_paths">Display full paths</string>
-    <string name="explain_display_full_paths">Show full paths in rule tiles</string>
-    <string name="settings_section_2">App Appearance</string>
-    <string name="app_theme">App Theme</string>
-    <string name="light">Light</string>
-    <string name="system">System</string>
-    <string name="dark">Dark</string>
-    <string name="settings_section_3">Data Transfer</string>
-    <string name="import_backup">Import backup</string>
-    <string name="import_warning">Overwrites your current rules and groups</string>
-    <string name="import_success">Data imported successfully</string>
-    <string name="export_backup">Export backup</string>
-    <string name="export_explanation">Generates a JSON export of your rules and groups</string>
-    <string name="export_success">Data exported successfully</string>
-    <string name="manage_groups">Manage groups</string>
-    <string name="servers">Servers</string>
-    <string name="manage_servers">Manage servers</string>
-    <string name="copy_success">Logs copied to clipboard</string>
-    <string name="logs">Logs</string>
-    <string name="copy_logs">Copy logs</string>
-    <string name="view_licenses">View licenses</string>
-    <string name="info">Info</string>
-    <string name="about_app">About FileFlow</string>
-    <!-- endregion -->
+    <!-- 区域：设置界面 -->
+    <string name="settings">设置</string>
+    <string name="settings_section_1">可选增强</string>
+    <string name="disable_battery_optimization">关闭电池优化</string>
+    <string name="explain_disabling_battery_optimization">允许应用不受系统限制运行</string>
+    <string name="all_files_access">所有文件访问</string>
+    <string name="explain_all_files_access">允许规则访问受保护的文件夹</string>
+    <string name="enable_rule_names">启用规则名称</string>
+    <string name="explain_enable_rule_names">为规则添加“名称”字段</string>
+    <string name="display_full_paths">显示完整路径</string>
+    <string name="explain_display_full_paths">在规则卡片中显示完整路径</string>
+    <string name="settings_section_2">应用外观</string>
+    <string name="app_theme">应用主题</string>
+    <string name="light">浅色</string>
+    <string name="system">跟随系统</string>
+    <string name="dark">深色</string>
+    <string name="settings_section_3">数据迁移</string>
+    <string name="import_backup">导入备份</string>
+    <string name="import_warning">将覆盖您当前的规则和规则组</string>
+    <string name="import_success">数据导入成功</string>
+    <string name="export_backup">导出备份</string>
+    <string name="export_explanation">生成包含规则和规则组的 JSON 文件</string>
+    <string name="export_success">数据导出成功</string>
+    <string name="manage_groups">管理规则组</string>
+    <string name="servers">服务器</string>
+    <string name="manage_servers">管理服务器</string>
+    <string name="copy_success">日志已复制到剪贴板</string>
+    <string name="logs">日志</string>
+    <string name="copy_logs">复制日志</string>
+    <string name="view_licenses">查看许可证</string>
+    <string name="info">信息</string>
+    <string name="about_app">关于 FileFlow</string>
+    <!-- 结束区域：设置界面 -->
 
-    <!-- region Shortcuts -->
-    <string name="group_edited_or_deleted">Group linked to this shortcut was edited/deleted.</string>
-    <!-- endregion -->
+    <!-- 区域：快捷方式 -->
+    <string name="group_edited_or_deleted">此快捷方式关联的规则组已被编辑或删除。</string>
+    <!-- 结束区域：快捷方式 -->
 
-    <!-- region UpsertGroupScreen -->
-    <string name="group_name">Group name</string>
-    <string name="group_name_placeholder">Enter a name for the group</string>
-    <string name="rules_to_include">Rules to include:</string>
-    <string name="all_rules">All rules, current and future</string>
-    <string name="some_rules">Some rules</string>
-    <string name="no_rules_while_grouping">No rules added.\nPlease create some rules first.</string>
-    <!-- endregion -->
+    <!-- 区域：新建/编辑规则组界面 -->
+    <string name="group_name">规则组名称</string>
+    <string name="group_name_placeholder">输入规则组名称</string>
+    <string name="rules_to_include">包含的规则：</string>
+    <string name="all_rules">所有规则（含当前及未来的）</string>
+    <string name="some_rules">部分规则</string>
+    <string name="no_rules_while_grouping">暂无规则。\n请先创建规则。</string>
+    <!-- 结束区域：新建/编辑规则组界面 -->
 
-    <!-- region UpsertRuleScreen -->
-    <string name="cancel">Cancel</string>
-    <string name="back">Back</string>
-    <string name="add">Add</string>
-    <string name="save">Save</string>
-    <string name="next">Next</string>
-    <string name="rule_name">Rule name</string>
-    <string name="rule_name_placeholder">A short label for this rule</string>
-    <string name="action">Action:</string>
-    <string name="enable_remote">Enable remote capabilities for this rule?</string>
-    <string name="source_device">"Source device: "</string>
-    <string name="this_device">this device</string>
-    <string name="source">"Source: "</string>
-    <string name="select_folder">select folder</string>
-    <string name="scan_subdirectories">Scan subfolders</string>
-    <string name="file_name_pattern">File name pattern</string>
-    <string name="pattern_placeholder">Enter a regex pattern</string>
-    <string name="match_entire_filename">Pattern should match the entire filename</string>
-    <string name="pattern_should_match">Pattern should match %1$s</string>
-    <string name="or">" or "</string>
-    <string name="delete_original">Delete original files from the source after execution</string>
-    <string name="delete_empty_src_directories">Delete subfolders if empty after execution</string>
-    <string name="choose_superlative">"In case of multiple matches, choose: "</string>
-    <string name="arrow_down">An arrow pointing downward</string>
-    <string name="destination_device">"Destination device: "</string>
-    <string name="destination">"Destination: "</string>
-    <string name="preserve_structure">Recreate source folder-structure in destination</string>
-    <string name="file_name_template">File name template</string>
-    <string name="template_placeholder">Enter a regex template</string>
-    <string name="blank_template_supporting">"Template will be used to name the file in the destination. "</string>
-    <string name="keep_name">Keep original name?</string>
-    <string name="template_will_yield">Template will yield %1$s</string>
-    <string name="overwrite_existing">Overwrite existing files in the destination, in case of conflict</string>
-    <string name="retention_days">Mark stale if unmodified for</string>
-    <string name="days">days</string>
-    <string name="preserve_structure_zip">Recreate source folder-structure in the archive</string>
-    <string name="blank_template_supporting_zip">Template will be used to name the archive</string>
-    <string name="overwrite_existing_zip">Overwrite existing archive in the destination, in case of conflict</string>
-    <string name="upside_down_wifi">A Wi-Fi symbol, rotated 90 degrees. It is meant to represent an emission.</string>
+    <!-- 区域：新建/编辑规则界面 -->
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="add">添加</string>
+    <string name="save">保存</string>
+    <string name="next">下一步</string>
+    <string name="rule_name">规则名称</string>
+    <string name="rule_name_placeholder">为此规则起一个简短的标签</string>
+    <string name="action">操作：</string>
+    <string name="enable_remote">为此规则启用远程功能？</string>
+    <string name="source_device">来源设备：</string>
+    <string name="this_device">本设备</string>
+    <string name="source">来源：</string>
+    <string name="select_folder">选择文件夹</string>
+    <string name="scan_subdirectories">扫描子文件夹</string>
+    <string name="file_name_pattern">文件名匹配模式</string>
+    <string name="pattern_placeholder">输入正则表达式</string>
+    <string name="match_entire_filename">匹配模式应匹配完整文件名</string>
+    <string name="pattern_should_match">匹配模式应匹配 %1$s</string>
+    <string name="or"> 或 </string>
+    <string name="delete_original">执行后从来源删除原始文件</string>
+    <string name="delete_empty_src_directories">执行后删除为空的子文件夹</string>
+    <string name="choose_superlative">如有多个匹配文件，选择：</string>
+    <string name="arrow_down">向下的箭头</string>
+    <string name="destination_device">目标设备：</string>
+    <string name="destination">目标：</string>
+    <string name="preserve_structure">在目标位置还原来源的文件夹结构</string>
+    <string name="file_name_template">文件名模板</string>
+    <string name="template_placeholder">输入正则模板</string>
+    <string name="blank_template_supporting">模板将用于目标位置的文件命名。</string>
+    <string name="keep_name">保留原名？</string>
+    <string name="template_will_yield">模板将生成 %1$s</string>
+    <string name="overwrite_existing">发生冲突时覆盖目标位置的已有文件</string>
+    <string name="retention_days">未修改超过以下天数视为过期</string>
+    <string name="days">天</string>
+    <string name="preserve_structure_zip">在压缩包中还原来源的文件夹结构</string>
+    <string name="blank_template_supporting_zip">模板将用于压缩包的命名</string>
+    <string name="overwrite_existing_zip">发生冲突时覆盖目标位置的已有压缩包</string>
+    <string name="upside_down_wifi">旋转 90° 的 Wi-Fi 图标，代表“发送”之意。</string>
     <string name="intent">Intent</string>
     <string name="intent_placeholder">com.example.app.ACTION</string>
-    <string name="package_name">Package</string>
+    <string name="package_name">应用包名</string>
     <string name="package_placeholder">com.example.app</string>
-    <string name="extras">Extras</string>
-    <string name="extras_placeholder">{\"key\": \"value\"}</string>
-    <string name="extras_supporting">Extras must be in JSON-string format</string>
-    <string name="modified_within">Modified within</string>
-    <string name="pattern_advice"><![CDATA[Click <a href=\"https://github.com/BURG3R5/FileFlow/wiki/Examples\">here↗</a> for example patterns and templates.]]></string>
-    <string name="invalid_regex">Regex pattern contains errors</string>
-    <string name="must_end_in_zip">Archive must have extension \".zip\"</string>
-    <string name="invalid_json">JSON contains errors</string>
-    <string name="remote_action_without_servers">"Remote capabilities are enabled but servers aren't utilized"</string>
-    <string name="pattern_doesnt_match_src_files">"Regex pattern doesn't match any file in the source folder"</string>
-    <string name="cannot_predict_dest_names">Cannot predict destination file names</string>
-    <string name="rule_name_not_provided">Rule name not provided</string>
-    <string name="schedule">Schedule:</string>
-    <string name="never">Never</string>
-    <string name="periodic">Periodic</string>
-    <string name="interval">Interval</string>
-    <string name="interval_placeholder">Enter an interval</string>
-    <string name="interval_disclaimer">"Interval is approximate: it is up to the OS to decide the exact execution time."</string>
-    <string name="interval_too_short">Due to OS restrictions, interval cannot be shorter than 15 minutes</string>
-    <string name="interval_too_long">To ensure proper execution, interval cannot be longer than 7 days</string>
-    <string name="cron_like">Cron-like</string>
-    <string name="cron_string">Cron string</string>
-    <string name="cron_placeholder">Enter a crontab string</string>
-    <string name="rule_will_execute_at">Rule will execute at %1$s</string>
-    <string name="cron_advice"><![CDATA[Click <a href=\"https://github.com/BURG3R5/FileFlow/wiki/Cron-Examples\">here↗</a> for example cron strings.]]></string>
-    <string name="exact_alarm_permission_description">FileFlow requires exemption from battery optimization to follow schedules exactly.</string>
-    <string name="invalid_cron_string">Cron string contains errors</string>
-    <string name="cron_too_frequent">To avoid rate-limiting by OS, rules cannot execute more than 4 times an hour</string>
-    <!-- region Action -->
-    <string name="move_phrase">Copy or move to another folder</string>
-    <string name="delete_stale_phrase">Delete if unmodified for a while</string>
-    <string name="zip_phrase">Create a ZIP archive</string>
-    <string name="emit_changes_phrase">Emit an intent if recently modified</string>
-    <!-- endregion -->
-    <!-- region FolderPickerBottomSheet -->
-    <string name="current_storage">"Current storage: "</string>
+    <string name="extras">附加参数</string>
+    <string name="extras_placeholder">{"key": "value"}</string>
+    <string name="extras_supporting">附加参数必须是 JSON 字符串格式</string>
+    <string name="modified_within">修改时间在</string>
+    <string name="pattern_advice"><![CDATA[点击 <a href=\"https://github.com/BURG3R5/FileFlow/wiki/Examples\">这里↗</a> 查看匹配模式和模板的示例。]]></string>
+    <string name="invalid_regex">正则表达式有误</string>
+    <string name="must_end_in_zip">压缩包扩展名必须为“.zip”</string>
+    <string name="invalid_json">JSON 格式有误</string>
+    <string name="remote_action_without_servers">已启用远程功能，但未选择任何服务器</string>
+    <string name="pattern_doesnt_match_src_files">匹配模式与来源文件夹中的任何文件都不匹配</string>
+    <string name="cannot_predict_dest_names">无法预测目标文件名</string>
+    <string name="rule_name_not_provided">未提供规则名称</string>
+    <string name="schedule">执行计划：</string>
+    <string name="never">从不</string>
+    <string name="periodic">周期执行</string>
+    <string name="interval">执行间隔</string>
+    <string name="interval_placeholder">输入间隔时间</string>
+    <string name="interval_disclaimer">执行间隔为近似值：具体执行时间由系统决定。</string>
+    <string name="interval_too_short">受系统限制，间隔不得少于 15 分钟</string>
+    <string name="interval_too_long">为确保正常执行，间隔不得超过 7 天</string>
+    <string name="cron_like">Cron 表达式</string>
+    <string name="cron_string">Cron 表达式</string>
+    <string name="cron_placeholder">输入 crontab 格式字符串</string>
+    <string name="rule_will_execute_at">规则将于 %1$s 执行</string>
+    <string name="cron_advice"><![CDATA[点击 <a href=\"https://github.com/BURG3R5/FileFlow/wiki/Cron-Examples\">这里↗</a> 查看 Cron 表达式示例。]]></string>
+    <string name="exact_alarm_permission_description">精确执行计划需要豁免电池优化。</string>
+    <string name="invalid_cron_string">Cron 表达式有误</string>
+    <string name="cron_too_frequent">为避免系统限流，规则每小时执行不得超过 4 次</string>
+    <!-- 区域：操作类型描述 -->
+    <string name="move_phrase">复制或移动到其他文件夹</string>
+    <string name="delete_stale_phrase">长期未修改则删除</string>
+    <string name="zip_phrase">创建 ZIP 压缩包</string>
+    <string name="emit_changes_phrase">文件被修改时发送广播</string>
+    <!-- 结束区域 -->
+    <!-- 区域：文件夹选择器 -->
+    <string name="current_storage">当前存储：</string>
     <string name="saf">SAF</string>
-    <string name="parent_directory">Back</string>
-    <string name="empty_folder">(Empty)</string>
-    <string name="folder">Folder</string>
-    <string name="file">File</string>
-    <string name="use_this_folder">Use this folder</string>
-    <!-- endregion -->
-    <!-- region Files -->
-    <string name="earliest">earliest</string>
-    <string name="latest">latest</string>
-    <string name="smallest">smallest</string>
-    <string name="largest">largest</string>
-    <string name="all">all</string>
-    <!-- endregion -->
-    <!-- endregion -->
+    <string name="parent_directory">返回上级</string>
+    <string name="empty_folder">（空）</string>
+    <string name="folder">文件夹</string>
+    <string name="file">文件</string>
+    <string name="use_this_folder">选择此文件夹</string>
+    <!-- 结束区域 -->
+    <!-- 区域：文件选择规则 -->
+    <string name="earliest">最早</string>
+    <string name="latest">最新</string>
+    <string name="smallest">最小</string>
+    <string name="largest">最大</string>
+    <string name="all">全部</string>
+    <!-- 结束区域 -->
+    <!-- 结束区域：新建/编辑规则界面 -->
 </resources>
